@@ -1,15 +1,24 @@
 import { Routes, Route } from 'react-router-dom';
 import Landing from './components/pages/Landing';
-import Game from './components/pages/Game';
+import GamePage from './components/pages/GamePage';
 
 function App() {
   return (
-    <div className="prose ">
+    <div
+      className="
+        max-w-none
+        py-20
+        flex
+        flex-col
+        justify-center
+        items-center
+      "
+    >
       <title>Minesweeper - React</title>
 
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/game" element={<Game />} />
+        <Route path="/game" element={<GamePage />} />
       </Routes>
     </div>
   );

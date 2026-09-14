@@ -2,7 +2,13 @@ import Link from '../components/Link';
 
 function Landing() {
   return (
-    <div className="landing-page">
+    <div
+      className="
+      prose
+      max-w-325
+      px-2.5
+    "
+    >
       <header>
         <h1>Trabajo Práctico 2 - Javascript</h1>
         <h5>Alumno: Eduardo O.</h5>
@@ -123,7 +129,20 @@ function Landing() {
         <section className="resolucion">
           <h2>Resolución</h2>
           <p>
-            <Link to={'/game'}>Juego</Link>
+            <Link
+              className="
+              text-[25px] 
+            text-amber-900 
+              mx-auto 
+              block 
+              w-fit 
+              uppercase 
+              no-underline
+              "
+              to={'/game'}
+            >
+              {'👉  Juego  👈'}
+            </Link>
           </p>
         </section>
       </main>

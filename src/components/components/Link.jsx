@@ -1,8 +1,9 @@
 import { Link as ReactLink } from 'react-router-dom';
+import { twMerge } from 'tailwind-merge';
 
-const Link = ({ to, children }) => {
+const Link = ({ to, children, className }) => {
   return (
-    <ReactLink className="hover:text-red-700 hover:underline" to={to}>
+    <ReactLink className={twMerge(`hover:text-red-700 ${className}`)} to={to}>
       {children}
     </ReactLink>
   );
