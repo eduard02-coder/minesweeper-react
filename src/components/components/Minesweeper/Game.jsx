@@ -1,5 +1,4 @@
-function Game(chosenSettings) {
-  console.log(chosenSettings);
+function Game(settings) {
   return <>hola</>;
 }
 

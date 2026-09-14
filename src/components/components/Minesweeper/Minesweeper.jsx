@@ -1,15 +1,14 @@
-import Settings from './Settings';
+import Settings from './settingsPage/Settings';
 import Game from './Game';
 import { useState } from 'react';
 
 function Minesweeper() {
-  const [settingsSelect, setSettingsSelect] = useState({ ready: false });
+  const [selectedSettings, setSelectedSettings] = useState({ ready: false });
 
-  console.log(settingsSelect);
-  if (!settingsSelect.ready) {
-    return <Settings select={settingsSelect} selectFunc={setSettingsSelect} />;
+  if (!selectedSettings.ready) {
+    return <Settings s selectFunc={setSelectedSettings} />;
   }
-  return <Game chosenSettings={settingsSelect} />;
+  return <Game chosenSettings={selectedSettings} />;
 }
 
 export default Minesweeper;
