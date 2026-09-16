@@ -1,6 +1,5 @@
 import settingsJSON from './settings.json';
 import OptionsList from './OptionsList';
-import List from '../../List';
 import Button from '../../Button';
 import { useState } from 'react';
 
