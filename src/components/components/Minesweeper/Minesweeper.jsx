@@ -8,7 +8,7 @@ function Minesweeper() {
   if (!selectedSettings.ready) {
     return <Settings selectFunc={setSelectedSettings} />;
   }
-  return <Game settings={selectedSettings} />;
+  return <Game settings={selectedSettings} setSettings={setSelectedSettings} />;
 }
 
 export default Minesweeper;
