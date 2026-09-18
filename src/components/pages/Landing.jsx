@@ -10,7 +10,7 @@ function Landing() {
     "
     >
       <header>
-        <h1>Trabajo Práctico 2 - Javascript</h1>
+        <h1>Trabajo Práctico 2 - React</h1>
         <h5>Alumno: Eduardo O.</h5>
         <hr />
       </header>
