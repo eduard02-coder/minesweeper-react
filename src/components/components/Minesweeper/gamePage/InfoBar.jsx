@@ -26,7 +26,9 @@ function InfoBar({ flags, gameState, setGameState }) {
     if (gameState === 'playing') {
       timer.start();
     } else {
-      timer.stop();
+      const timeInstant = timer.time;
+      timer.reset();
+      setTime(timeFormatter(timeInstant));
     }
 
     return () => {
